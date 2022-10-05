@@ -1,0 +1,42 @@
+.app > div {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.app > div > div {
+  background-color: rgb(198, 188, 169);
+  padding: 2rem;
+}
+
+.app h2,
+p {
+  padding-bottom: 10px;
+}
+
+.app > div > div :last-child {
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  transition: width 2s;
+}
+
+.app > div > div :last-child:hover {
+  width: 500px;
+}
+
+@media (max-width: 930px) {
+  .app > div {
+    display: block;
+  }
+}
